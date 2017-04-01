@@ -2,13 +2,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="@dimen/list_item_card_margin"
+    android:layout_marginRight="@dimen/list_item_card_margin"
+    android:layout_marginTop="@dimen/list_item_card_margin"
+    android:layout_marginBottom="@dimen/list_item_card_margin"
     android:clickable="true"
     android:focusable="true"
-    android:elevation="2dp"
+    android:elevation="@dimen/list_item_card_elevation"
     android:foreground="?selectableItemBackground">
 
     <FrameLayout
@@ -42,11 +42,13 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="4"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textStyle="bold"
-                android:paddingBottom="4dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
+                android:paddingBottom="@dimen/list_item_title_bottom_padding"
+                android:paddingLeft="@dimen/list_item_title_LTR_padding"
+                android:paddingRight="@dimen/list_item_title_LTR_padding"
+                android:paddingTop="@dimen/list_item_title_LTR_padding"
+                android:textSize="@dimen/list_item_title_text_size"
                 android:textColor="#fff" />
 
             <TextView
@@ -57,9 +59,10 @@
                 android:textStyle="bold"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:paddingBottom="16dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/list_item_title_LTR_padding"
+                android:paddingLeft="@dimen/list_item_title_LTR_padding"
+                android:paddingRight="@dimen/list_item_title_LTR_padding"
+                android:textSize="@dimen/list_item_byline_text_size"
                 android:textColor="#fff" />
         </LinearLayout>
     </FrameLayout>
